@@ -1,0 +1,18 @@
+@import "../../styles/index.scss";
+
+.headerWrapper {
+  position: sticky;
+  top: 0px;
+  background-color: $white;
+  z-index: 10;
+
+  .header {
+    @include flex(flex-start, center);
+  }
+}
+
+@media (max-width: 1600px) {
+  .searchInput {
+    display: none;
+  }
+}

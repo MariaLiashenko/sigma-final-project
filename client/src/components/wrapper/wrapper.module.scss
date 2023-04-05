@@ -1,0 +1,16 @@
+@import "../../styles/index.scss";
+
+.wrapper {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  position: sticky;
+}
+
+@media (max-width: 1350px) {
+  .wrapper {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+}

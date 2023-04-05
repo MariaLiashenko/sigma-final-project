@@ -1,0 +1,53 @@
+@import "../../styles/index.scss";
+
+.newsletter {
+  @include flex(flex-start, center);
+  @include size(100%, 323px);
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  border-radius: 30px;
+  background-size: cover;
+  background-image: url("../../assets/images/newsletter-background.png");
+}
+
+.h2 {
+  @include fontSize("Roboto", 800, $white, 50px, 59px);
+  margin-left: 10%;
+  width: 30%;
+  margin-right: 25%;
+}
+
+.searchInput {
+  @include flex(flex-start, center);
+  width: 30%;
+  margin-right: 10%;
+  gap: 5px;
+}
+
+.input {
+  border: none;
+  background: #ffffff;
+  border-radius: 16px;
+  width: 60%;
+}
+
+@media (max-width: 1350px) {
+  .h2 {
+    font-size: 40px;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .searchInput {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 920px) {
+  .newsletter {
+    display: block;
+  }
+  
+  .searchInput {
+    margin-left: 20px;
+  }
+}

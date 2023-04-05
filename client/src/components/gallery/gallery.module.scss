@@ -1,0 +1,44 @@
+@import "../../styles/index.scss";
+
+.galleryWrapper {
+  @include flex;
+  background-color: $light-green;
+  gap: 30px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  .card {
+    @include flex(center, center);
+    width: 33%;
+    height: 583px;
+    background-size: cover;
+
+    .button {
+      border: none;
+    }
+  }
+
+  .card:nth-child(1) {
+    background-image: url("../../assets/images/gallery-juice.png");
+  }
+
+  .card:nth-child(2) {
+    background-image: url("../../assets/images/gallery-food.png");
+  }
+
+  .card:nth-child(3) {
+    background-image: url("../../assets/images/gallery-cookies.png");
+  }
+}
+
+@media (max-width: 1350px) {
+  .galleryWrapper {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .card {
+      height: 370px;
+    }
+  }
+}

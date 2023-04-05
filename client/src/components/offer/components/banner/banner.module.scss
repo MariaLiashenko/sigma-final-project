@@ -1,0 +1,32 @@
+@import "../../../../styles/index.scss";
+
+.banner {
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 50px;
+  background-size: cover;
+  width: 45%;
+  border-radius: 30px;
+
+  .name {
+    @include fontSize("Yellowtail", 400, $green, 36px, 49px);
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .article {
+    @include fontSize("Roboto", 800, $dark-blue, 40px, 47px);
+    margin-top: 0;
+    margin-bottom: 23px;
+    width: 55%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .banner {
+    padding: 70px 0 70px 30px;
+    
+    .article {
+      width: 70%;
+    }
+  }
+}

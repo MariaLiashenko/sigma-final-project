@@ -1,0 +1,29 @@
+@import "../../styles/index.scss";
+
+.newsWrapper {
+  margin-bottom: 150px;
+}
+
+.newsContainer {
+  margin-top: 150px;
+  margin-bottom: 48px;
+  @include flex(space-between, flex-end);
+
+  .name {
+    @include fontSize("Yellowtail", 400, $green, 36px, 49px);
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    @include fontSize("Roboto", 800, $dark-blue, 40px, 47px);
+    margin-top: 0;
+    margin-bottom: 23px;
+    width: 55%;
+  }
+}
+
+.reviews {
+  @include flex(center, center);
+  gap: 78px;
+}

@@ -1,0 +1,29 @@
+@import "../../styles/index.scss";
+
+.cardContent {
+  background: rgba(253, 176, 45, 0.16);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  .price {
+    text-align: right;
+    margin-right: 18%;
+
+    p {
+      display: inline-block;
+      margin-right: 10px;
+      @include fontSize("Roboto", 700, $dark-blue, 40px, 47px);
+      margin-bottom: 15px;
+    }
+
+    span {
+      display: inline-block;
+      @include fontSize("Roboto", 700, $dark-blue, 40px, 47px);
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

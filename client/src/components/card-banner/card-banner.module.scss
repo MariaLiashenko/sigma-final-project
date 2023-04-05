@@ -1,0 +1,13 @@
+@import "../../styles/index.scss";
+
+.cardBanner {
+  @include flex(center, center);
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-size: cover;
+  background-image: url("../../assets/images/banner.png");
+
+  p {
+    @include fontSize("Roboto", 800, $dark-blue, 70px, 82px);
+  }
+}

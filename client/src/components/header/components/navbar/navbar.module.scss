@@ -1,0 +1,30 @@
+@import "../../../../styles/index.scss";
+
+.navbar {
+  width: 40%;
+  margin-right: 10%;
+
+  ul {
+    @include flex;
+    list-style-type: none;
+    gap: 7%;
+  }
+
+  li a {
+    @include fontSize("Roboto", 700, $dark-blue, 20px, 23px);
+  }
+}
+
+@media (max-width: 1470px) {
+  .navbar {
+    width: 60%;
+    margin-right: 10px;
+
+    ul {
+      @include flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      gap: 7%;
+    }
+  }
+}

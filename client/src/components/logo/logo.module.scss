@@ -1,0 +1,11 @@
+@import "../../styles/index.scss";
+.logo {
+  @include size(198px, 75px);
+  margin-right: 10%;
+}
+
+@media (max-width: 1350px) {
+  .logo {
+    margin-right: 10px;
+  }
+}

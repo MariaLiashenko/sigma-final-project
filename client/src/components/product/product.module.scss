@@ -1,0 +1,48 @@
+@import "../../styles/index.scss";
+
+.product {
+  padding: 20px 30px;
+  background-color: $light-gray;
+  border-radius: 30px;
+  width: 300px;
+
+  .category {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: $dark-blue;
+    border-radius: 8px;
+    @include fontSize("Open Sans", 600, $white, 15px, 20px);
+  }
+
+  .image {
+    @include size(300px, 300px);
+    background-repeat: no-repeat;
+    background: $light-gray no-repeat center center / cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .name {
+    @include fontSize("Roboto", 600, $dark-blue, 20px, 23px);
+    padding-bottom: 13px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .rating {
+    @include flex(space-between);
+  }
+
+  .lastPrice {
+    @include fontSize("Open Sans", 600, $gray, 15px, 20px);
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 7px;
+  }
+
+  .price {
+    display: inline-block;
+    @include fontSize("Roboto", 900, $dark-blue, 18px, 25px);
+  }
+}

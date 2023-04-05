@@ -1,0 +1,22 @@
+@import "../../styles/index.scss";
+
+.offerWrapper {
+  @include flex;
+  gap: 30px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 1350px) {
+  .offerWrapper {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 920px) {
+  .offerWrapper {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}

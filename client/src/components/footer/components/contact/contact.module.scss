@@ -1,0 +1,26 @@
+@import "../../../../styles/index.scss";
+
+.contactWrapper {
+  text-align: right;
+  padding-right: 50px;
+  border-right: 1px solid $gray;
+  width: 20%;
+  padding-bottom: 50px;
+
+  .name {
+    @include fontSize("Roboto", 700, $dark-blue, 30px, 35px);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  :nth-child(2n) {
+    @include fontSize("Open Sans", 700, $dark-blue, 18px, 29px);
+    display: block;
+  }
+
+  :nth-child(2n + 3) {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    display: block;
+    margin-bottom: 15px;
+  }
+}

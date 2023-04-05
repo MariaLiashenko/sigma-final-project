@@ -1,0 +1,104 @@
+@import "../../styles/index.scss";
+
+.testimonialWrapper {
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-size: cover;
+  background-image: url("../../assets/images/testimonials-background.png");
+  text-align: center;
+
+  .name {
+    @include fontSize("Yellowtail", 400, $green, 36px, 49px);
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .article {
+    @include fontSize("Roboto", 800, $dark-blue, 50px, 59px);
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+}
+
+.feedback {
+  margin: 0 15% 0 15%;
+  border-bottom: 1px solid $gray;
+
+  .stars {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .description {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    margin-bottom: 29px;
+    padding: 0 10% 0 10%;
+  }
+
+  .fullName {
+    @include fontSize("Roboto", 600, $dark-blue, 25px, 29px);
+  }
+
+  .consumer {
+    margin-bottom: 19px;
+    @include fontSize("Open Sans", 400, $dark-blue, 15px, 19px);
+  }
+
+  .dots {
+    @include flex(center, center);
+    gap: 6px;
+    margin-bottom: 100px;
+
+    .point {
+      @include size(8px, 8px);
+      padding: 0;
+      background-color: $gray;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .current {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+.stats {
+  margin-top: 100px;
+  @include flex(center, center);
+  gap: 60px;
+  flex-wrap: wrap;
+
+  .counter {
+    @include size(211px, 211px);
+    background-image: url("../../assets/images/chart.png");
+  }
+
+  .number {
+    margin-top: 64px;
+    @include fontSize("Roboto", 800, $dark-blue, 50px, 59px);
+  }
+
+  p {
+    @include fontSize("Open Sans", 600, $dark-blue, 18px, 29px);
+  }
+}
+
+@media (max-width: 1560px) {
+  .testimonialWrapper {
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .stats {
+    margin-top: 40px;
+  }
+
+  .dots {
+    margin-bottom: 40px;
+  }
+}

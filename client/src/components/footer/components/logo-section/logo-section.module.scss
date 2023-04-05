@@ -1,0 +1,33 @@
+@import "../../../../styles/index.scss";
+
+.logoSectionWrapper {
+  text-align: center;
+  padding: 0 40px;
+  width: 30%;
+
+  :nth-child(1) {
+    margin-right: 0;
+  }
+
+  p {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    margin: 15px 0 40px 0;
+  }
+
+  .socialMedia {
+    margin-bottom: 50px;
+    @include flex(center);
+    gap: 15px;
+
+    a {
+      text-align: center;
+      padding: 20px;
+      background-color: $light-green;
+      border-radius: 30px;
+      
+      .ico {
+        @include size(20px, 20px);
+      }
+    }
+  }
+}

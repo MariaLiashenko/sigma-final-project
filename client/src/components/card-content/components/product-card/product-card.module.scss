@@ -1,0 +1,51 @@
+@import "../../../../styles/index.scss";
+
+.productCard {
+  @include flex(flex-start, center);
+  margin-bottom: 10px;
+
+  .image {
+    border-radius: 30px;
+    @include size(230px, 230px);
+    background-size: cover;
+    margin-right: 40px;
+  }
+
+  .name {
+    margin-right: 10px;
+    @include fontSize("Roboto", 600, $dark-blue, 40px, 47px);
+  }
+
+  .lastPrice {
+    @include fontSize("Open Sans", 600, $gray, 17px, 24px);
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+
+  .price {
+       margin-right: 20%;
+    @include fontSize("Roboto", 900, $dark-blue, 25px, 34px);
+  }
+
+  .container{
+    @include flex(space-between, center);
+    margin-left: auto;
+  }
+
+  .quantity {
+    margin-right: 20px;
+    @include fontSize("Roboto", 900, $dark-blue, 25px, 34px);
+  }
+
+  .inputCard {
+    width: 95px;
+    height: 20px;
+    text-align: center;
+    margin-right: 90px;
+    padding-right: 10px;
+  }
+
+  .btn{
+    padding: 11px 25px
+  }
+}

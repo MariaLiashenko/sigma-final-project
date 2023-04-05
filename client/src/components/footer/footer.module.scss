@@ -1,0 +1,23 @@
+@import "../../styles/index.scss";
+
+.footerWrapper {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  @include flex(center);
+}
+
+.copywrite {
+  @include flex(center);
+  gap: 2px;
+  padding-top: 17px;
+  border-top: 1px solid $gray;
+  padding-bottom: 27px;
+  
+  a {
+    @include fontSize("Open Sans", 700, $dark-blue, 18px, 29px);
+  }
+
+  span {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/index.scss";
+
+.section {
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-size: cover;
+  background-image: url("../../assets/images/about-background.png");
+}
+
+.container {
+  margin-left: 55%;
+
+  .name {
+    @include fontSize("Yellowtail", 400, $green, 36px, 49px);
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .article {
+    @include fontSize("Roboto", 800, $dark-blue, 50px, 59px);
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+
+  .description {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    margin-bottom: 29px;
+  }
+}
+
+.category {
+  @include flex;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .icon {
+    padding: 20px;
+    @include size(50px, 50px);
+    background: $white;
+    border-radius: 20px;
+  }
+
+  .description {
+    @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    margin: 0;
+  }
+
+  .title {
+    @include fontSize("Roboto", 800, $dark-blue, 25px, 29px);
+  }
+}
+
+@media (max-width: 1560px) {
+  .container {
+    margin-left: 20%;
+    background-color: $light-gray;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin-left: 0%;
+    background-color: $light-gray;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+}

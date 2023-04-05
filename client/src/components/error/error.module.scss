@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+.error {
+  padding: 204px 14% 204px 0;
+  background-size: cover;
+  background-image: url("../../assets/images/image404.png");
+  @include flex(flex-end, flex-end);
+  flex-direction: column;
+
+  .text {
+    text-align: center;
+    
+    .img {
+      @include size(500px, 219px);
+    }
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      @include fontSize("Roboto", 800, $dark-blue, 70px, 82px);
+    }
+
+    p {
+      @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+    }
+  }
+  .btn {
+    margin-top: 30px;
+    margin-right: 17%;
+  }
+}

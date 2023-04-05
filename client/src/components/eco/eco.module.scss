@@ -1,0 +1,57 @@
+@import "../../styles/index.scss";
+
+.ecoWrapper {
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: 60%;
+  background-image: url("../../assets/images/eco-friendly.png");
+}
+
+.container {
+  background-color: $white;
+  margin-left: 50%;
+  padding: 78px 90px;
+  border-radius: 30px;
+}
+
+.name {
+  @include fontSize("Yellowtail", 400, $green, 36px, 49px);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.title {
+  @include fontSize("Roboto", 800, $dark-blue, 50px, 59px);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 7px;
+  @include fontSize("Roboto", 500, $dark-blue, 25px, 29px);
+}
+
+.description {
+  @include fontSize("Open Sans", 400, $dark-blue, 18px, 29px);
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1560px) {
+  .ecoWrapper {
+    background-size: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    background-color: $white;
+    margin-left: 20%;
+    padding: 38px 50px;
+  }
+}
+@media (max-width: 920px) {
+  .container {
+    margin-left: 2%;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../styles/index.scss";
+
+.input {
+  @include fontSize("Roboto", 400, $dark-blue, 18px, 21px);
+  background: $white;
+  border: 1px solid $green;
+  border-radius: 16px;
+  padding: 28px 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  @include fontSize("Roboto", 400, $gray, 18px, 21px);
+  font-style: italic;
+}
+
+.label {
+  @include fontSize("Roboto", 600, $dark-blue, 18px, 21px);
+  margin-bottom: 26px;
+  display: block;
+}

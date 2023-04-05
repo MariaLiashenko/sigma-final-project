@@ -1,0 +1,27 @@
+@import "../../../../styles/index.scss";
+
+.searchInput {
+  @include flex(flex-start, center);
+  background: $light-gray;
+  padding: 10px 7px;
+  border-radius: 35px;
+  margin-right: 3%;
+
+  .input {
+    border: none;
+    background: $light-gray;
+    margin-right: 5px;
+  }
+
+  .button {
+    background: $green;
+    padding: 6px 9px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .searchInput {
+    display: none;
+  }
+}

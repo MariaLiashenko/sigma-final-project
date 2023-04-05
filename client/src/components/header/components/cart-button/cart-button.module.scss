@@ -1,0 +1,16 @@
+@import "../../../../styles/index.scss";
+
+.cart {
+  @include flex(flex-start, center);
+  padding: 10px 7px;
+  border: 1px solid $gray;
+  border-radius: 33px;
+  @include fontSize("Roboto", 600, $dark-blue, 15px, 18px);
+  
+  .ico {
+    background: $dark-blue;
+    padding: 6px 8px;
+    border-radius: 15px;
+    margin-right: 3px;
+  }
+}
